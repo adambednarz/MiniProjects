@@ -5,6 +5,7 @@ using System.Text;
 
 namespace CustomAttributes
 {
+
     [DebugInfo(100, "Adam", "20.11.2019", Message = "Class is uncompleted")]
     public class Sender
     {
@@ -25,7 +26,7 @@ namespace CustomAttributes
             EmailSender(email, message);
             SMSSender(number, message);
         }
-        [DebugInfo(200, "Karol", "40.11.2019", Message = "Sender has no inform if the message was correctly send.")]
+        [DebugInfo(200, "Karol", "40.11.2019", Message = "Sender does not return any information if the message was correctly send.")]
         public void EmailSender(string email, string message)
         {
             //IsEmailSend = true;
