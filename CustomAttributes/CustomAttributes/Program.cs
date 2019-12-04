@@ -11,6 +11,7 @@ namespace CustomAttributes
             // Wyświetlamy kody atrybutów klasy 
             MemberInfo info = typeof(Sender);
             object[] attributes = info.GetCustomAttributes(true);
+            var type1 = info.GetType();
 
             Console.WriteLine($"Kody atrybutów klasy {nameof(Sender)}:");
             foreach (var attribute in attributes)
@@ -27,7 +28,7 @@ namespace CustomAttributes
             Type type = typeof(Sender);
 
             Console.WriteLine($"Atrybuty metod z klasy {nameof(Sender)}:");
-            foreach (var method in type.GetConstructors())
+            foreach (var method in type.GetMethods())
             { 
                 foreach (Attribute a in method.GetCustomAttributes(true))
                 {
