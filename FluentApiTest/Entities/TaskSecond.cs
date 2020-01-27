@@ -1,8 +1,8 @@
-﻿using FluentApi.Entities.Builders;
+﻿using FluentBuilders.Entities.Builders;
 using System;
 using System.Collections.Generic;
 
-namespace FluentApi.Entities
+namespace FluentBuilders.Entities
 {
     public class TaskSecond
     {

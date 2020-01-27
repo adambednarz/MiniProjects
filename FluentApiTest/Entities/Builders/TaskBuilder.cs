@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentApi.Entities.Builders
+namespace FluentBuilders.Entities.Builders
 {
     public class TaskBuilder
     {
